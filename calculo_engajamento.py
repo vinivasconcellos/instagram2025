@@ -1,16 +1,16 @@
-def formatar_mes(df_postagens2025):
+#analisar -> filtrar
+# Engajamento = Curtidas + Comentários + Compartilhamentos + Salvos
+#import pandas as pd
+
+def calcular_engajamento(df_engaj):
     """
-    Remove espaços extras da coluna 'Mês'
+    Calcula engajamento como soma de curtidas, comentários,
+    compartilhamentos e salvos.
+    Retorna o DataFrame com a coluna 'Engajamento'.
     """
-    df_postagens2025 = df_postagens2025.copy()  # boa prática para evitar efeitos colaterais
-    #df_postagens2025["Mês"] = df_postagens2025["Mês"].astype(str).str.strip()
-    df_postagens2025["Mês"] = df_postagens2025["Mês"].str.strip()
-    df_postagens2025["Título / Tema do Post"] = df_postagens2025["Título / Tema do Post"].str.strip()
-    df_postagens2025["Formato"] = df_postagens2025["Formato"].str.strip()
-    df_postagens2025["Mês"] = df_postagens2025["Mês"].str.capitalize()
-    df_postagens2025["Título / Tema do Post"] = df_postagens2025["Título / Tema do Post"].str.lower()
-    df_postagens2025["Formato"] = df_postagens2025["Formato"].str.capitalize()
-    return df_postagens2025
+    df_engaj = df_engaj.copy()  # evita alterar o original
+    df_engaj["Engajamento"] = (df_engaj["Curtidas"] + df_engaj["Coment."] + df_engaj["Compart."] + df_engaj["Salvos"])
+    return df_engaj
 
 
 
