@@ -1,1 +1,1 @@
-#Análise de psotagens do Instagram no ano de 2025
+#Analysis of Instagram posts from 2025, identifying which content performed best according to its format, as well as categorizing them to provide a better idea of ​​what to continue, change, or delete for the following year.
