@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Análise de postagens do Instagram no ano de 2025
 #Limpeza de dados e formatação de coluna
 #Criação de coluna engajamento
@@ -7,3 +8,6 @@
 #cálculo de outliers
 #vizualização diferença de resultados, por exemplo, engajamento quando comparando com outliers e sem outliers
 
+=======
+#Analysis of Instagram posts from 2025, identifying which content performed best according to its format, as well as categorizing them to provide a better idea of ​​what to continue, change, or delete for the following year.
+>>>>>>> 478f4d15bb7515726ce64689e289df6362eda566
